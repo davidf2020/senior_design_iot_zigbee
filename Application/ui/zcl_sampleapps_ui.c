@@ -1690,7 +1690,7 @@ void UI_UpdateDeviceInfoLine(void)
 
     char lineFormat[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
-    strcat(lineFormat, "["CUI_COLOR_CYAN"IEEE Addr"CUI_COLOR_RESET"] ");
+    //strcat(lineFormat, "["CUI_COLOR_CYAN"IEEE Addr"CUI_COLOR_RESET"] ");
 
     char* pBuffer = &lineFormat[strlen(lineFormat)];
     for (int8_t i = Z_EXTADDR_LEN - 1; i >= 0; i--)
@@ -1705,25 +1705,27 @@ void UI_UpdateDeviceInfoLine(void)
     }
     *pBuffer = 0;  //Add end of string
 
-    strcat(lineFormat, " ["CUI_COLOR_CYAN"Power Mode"CUI_COLOR_RESET"] ");
+    //
+
+    //strcat(lineFormat, " ["CUI_COLOR_CYAN"Power Mode"CUI_COLOR_RESET"] ");
 
     if(rsp.devState == zstack_DevState_HOLD)
     {
-      strcat(lineFormat, "N/A");
+      //strcat(lineFormat, "N/A");
     }
     else
     {
       if(rsp.capInfo.rxOnWhenIdle == TRUE)
       {
-        strcat(lineFormat, "RX Always On");
+        //strcat(lineFormat, "RX Always On");
       }
       else
       {
-        strcat(lineFormat, "Sleepy");
+        //strcat(lineFormat, "Sleepy");
       }
     }
 
-    CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gDeviceInfoLine, lineFormat);
+    //CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gDeviceInfoLine, lineFormat);
 }
 
 /*********************************************************************
@@ -1745,16 +1747,16 @@ void UI_UpdateNwkStatusLine(void)
 
     char lineFormat[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
-    strcat(lineFormat, "["CUI_COLOR_CYAN"PAN ID"CUI_COLOR_RESET"] 0x%04x ["CUI_COLOR_CYAN"Channel"CUI_COLOR_RESET"] %02d ["CUI_COLOR_CYAN"Short Address"CUI_COLOR_RESET"] 0x%04x");
+    //strcat(lineFormat, "["CUI_COLOR_CYAN"PAN ID"CUI_COLOR_RESET"] 0x%04x ["CUI_COLOR_CYAN"Channel"CUI_COLOR_RESET"] %02d ["CUI_COLOR_CYAN"Short Address"CUI_COLOR_RESET"] 0x%04x");
 
-    CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gNwkInfoLine, lineFormat, rsp.panId, rsp.logicalChannel, rsp.nwkAddr);
+    //CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gNwkInfoLine, lineFormat, rsp.panId, rsp.logicalChannel, rsp.nwkAddr);
 
 #if ZG_BUILD_ENDDEVICE_TYPE
     char lineFormat2[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
-    strcat(lineFormat2, "["CUI_COLOR_CYAN"Parent Address"CUI_COLOR_RESET"] 0x%04x");
+    //strcat(lineFormat2, "["CUI_COLOR_CYAN"Parent Address"CUI_COLOR_RESET"] 0x%04x");
 
-    retVal = CUI_statusLinePrintf(gCuiHandle, gNwkInfoLine2, lineFormat2, rsp.parentNwkAddr);
+    //retVal = CUI_statusLinePrintf(gCuiHandle, gNwkInfoLine2, lineFormat2, rsp.parentNwkAddr);
 #endif
 }
 
@@ -1775,7 +1777,7 @@ void UI_UpdateGpStatusLine(void)
 {
   char lineFormat[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
-  strcpy(lineFormat, "["CUI_COLOR_CYAN"GPP Commissioning"CUI_COLOR_RESET"] ");
+  //strcpy(lineFormat, "["CUI_COLOR_CYAN"GPP Commissioning"CUI_COLOR_RESET"] ");
 
   if(gp_GetProxyCommissioningMode() == TRUE)
   {
@@ -1790,35 +1792,35 @@ void UI_UpdateGpStatusLine(void)
             }
         }
 
-        strcat(lineFormat, "TIME %03ds");
+        //strcat(lineFormat, "TIME %03ds");
     }
     else
     {
       //No time, then it is just enabled
-      strcat(lineFormat, "ENABLED");
+      //strcat(lineFormat, "ENABLED");
     }
   }
   else
   {
     gppCommissioningTimeout = 0;
-    strcat(lineFormat, "DISABLED");
+    //strcat(lineFormat, "DISABLED");
   }
 
 #if defined (ENABLE_GREENPOWER_COMBO_BASIC)
-  strcat(lineFormat, " ["CUI_COLOR_CYAN"GPS Commissioning"CUI_COLOR_RESET"] ");
+  //strcat(lineFormat, " ["CUI_COLOR_CYAN"GPS Commissioning"CUI_COLOR_RESET"] ");
   if(gp_GetSinkCommissioningMode())
   {
-      strcat(lineFormat, "ENABLED ");
+      //strcat(lineFormat, "ENABLED ");
   }
   else
   {
-      strcat(lineFormat, "DISABLED");
+      //strcat(lineFormat, "DISABLED");
   }
 #endif
 
-  CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gGpInfoLine,
+  /*CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gGpInfoLine,
                                                      lineFormat,gppCommissioningTimeout);
-
+*/
 }
 #endif
 
@@ -1835,7 +1837,7 @@ void UI_UpdateBindInfoLine(void)
 {
   char lineFormat[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
-  strcat(lineFormat, "["CUI_COLOR_CYAN"Last bind"CUI_COLOR_RESET"] Addr ");
+  //strcat(lineFormat, "["CUI_COLOR_CYAN"Last bind"CUI_COLOR_RESET"] Addr ");
 
   char* pBuffer = &lineFormat[strlen(lineFormat)];
   for (int8_t i = Z_EXTADDR_LEN - 1; i >= 0; i--)
@@ -1850,11 +1852,11 @@ void UI_UpdateBindInfoLine(void)
   }
   *pBuffer = 0;  //Add end of string
 
-  strcat(lineFormat, " ClusterId 0x%04x");
-  strcat(lineFormat, " Endpoint 0x%02x");
+  //strcat(lineFormat, " ClusterId 0x%04x");
+  //strcat(lineFormat, " Endpoint 0x%02x");
 
-  CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gBindInfoLine, lineFormat,
-                        lastBindNotification.clusterId, lastBindNotification.ep);
+  //CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gBindInfoLine, lineFormat,
+  //                      lastBindNotification.clusterId, lastBindNotification.ep);
 }
 
 
@@ -1911,31 +1913,31 @@ void UI_UpdateBdbStatusLine(bdbCommissioningModeMsg_t *bdbCommissioningModeMsg)
 
       Zstackapi_bdbTouchLinkTargetGetTimerReq(uiAppEntity, &zstack_bdbTouchLinkTargetGetTimerRsp);
 
-      strcat(&lineFormat[strlen(lineFormat)], " ["CUI_COLOR_CYAN"TL Target"CUI_COLOR_RESET"] ");
+      //strcat(&lineFormat[strlen(lineFormat)], " ["CUI_COLOR_CYAN"TL Target"CUI_COLOR_RESET"] ");
 
       temp_u32 = (zstack_bdbTouchLinkTargetGetTimerRsp.Time);
       if (temp_u32 == 0)
       {
-          strcat(&lineFormat[strlen(lineFormat)], "DISABLED");
+          //strcat(&lineFormat[strlen(lineFormat)], "DISABLED");
       }
       else if (temp_u32 == TOUCHLINK_TARGET_PERPETUAL)
       {
-        strcat(&lineFormat[strlen(lineFormat)], "ENABLED FOREVER ");
+        //strcat(&lineFormat[strlen(lineFormat)], "ENABLED FOREVER ");
       }
       else
       {
-        strcat(&lineFormat[strlen(lineFormat)], "Enabled for %05ds");
+        //strcat(&lineFormat[strlen(lineFormat)], "Enabled for %05ds");
         tl_target_running = TRUE;
 
         temp_u32 = temp_u32 / 1000 + ((temp_u32 % 1000) > 0 ? 1 : 0);
       }
 
-      CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gBdbInfoLine, lineFormat,
+      /*CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gBdbInfoLine, lineFormat,
                                                  identifyTime,
                                                  zstack_bdbGetFBInitiatorStatusRsp.RemainingTime,
                                                  FBMatchesFound,
                                                  temp_u32);
-
+    */
       if (identifyTime || zstack_bdbGetFBInitiatorStatusRsp.RemainingTime
                 || permitJoinDuration || tl_target_running)
       {
@@ -1947,11 +1949,11 @@ void UI_UpdateBdbStatusLine(bdbCommissioningModeMsg_t *bdbCommissioningModeMsg)
 
 #else
 
-    CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gBdbInfoLine,
+    /*CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gBdbInfoLine,
                                                lineFormat, identifyTime,
                                                zstack_bdbGetFBInitiatorStatusRsp.RemainingTime,
                                                FBMatchesFound);
-
+*/
     if (identifyTime || zstack_bdbGetFBInitiatorStatusRsp.RemainingTime
           || permitJoinDuration) {
       if(Timer_isActive(&uiBdbLineUpdateClk) != true)
@@ -2139,36 +2141,36 @@ CUI_clientHandle_t UI_Init(uint8_t  zclSampleApp_Entity, uint32_t *zclSampleAppE
 
   CUI_retVal_t retVal;
   /* Register the zigbee main menu with the CUI */
-  retVal = CUI_registerMenu(gCuiHandle, &zclMenuMain);
+  //retVal = CUI_registerMenu(gCuiHandle, &zclMenuMain);
 
   /* Request Async Line for Device Info */
-  retVal = CUI_statusLineResourceRequest(gCuiHandle, "Device Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gDeviceInfoLine);
+  //retVal = CUI_statusLineResourceRequest(gCuiHandle, "Device Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gDeviceInfoLine);
 
-  UI_UpdateDeviceInfoLine();
+  //UI_UpdateDeviceInfoLine();
 
   /* Request Async Line for NWK Info */
-  retVal = CUI_statusLineResourceRequest(gCuiHandle, "   NWK Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gNwkInfoLine);
+  //retVal = CUI_statusLineResourceRequest(gCuiHandle, "   NWK Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gNwkInfoLine);
 
 #if ZG_BUILD_ENDDEVICE_TYPE
-  retVal = CUI_statusLineResourceRequest(gCuiHandle, "   NWK Info"CUI_DEBUG_MSG_START"2"CUI_DEBUG_MSG_END, &gNwkInfoLine2);
+  //retVal = CUI_statusLineResourceRequest(gCuiHandle, "   NWK Info"CUI_DEBUG_MSG_START"2"CUI_DEBUG_MSG_END, &gNwkInfoLine2);
 #endif
 
-  UI_UpdateNwkStatusLine();
+  //UI_UpdateNwkStatusLine();
 
   /* Request Async Line for ZDO Info */
-  retVal = CUI_statusLineResourceRequest(gCuiHandle, "   ZDO Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gZdoInfoLine);
+  //retVal = CUI_statusLineResourceRequest(gCuiHandle, "   ZDO Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gZdoInfoLine);
 
   /* Request Async Line for BDB Info */
-  retVal = CUI_statusLineResourceRequest(gCuiHandle, "   BDB Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gBdbInfoLine);
+  //retVal = CUI_statusLineResourceRequest(gCuiHandle, "   BDB Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gBdbInfoLine);
 
   /* Request Async Line for Bind Info */
-  retVal = CUI_statusLineResourceRequest(gCuiHandle, "  Bind Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gBindInfoLine);
+  //retVal = CUI_statusLineResourceRequest(gCuiHandle, "  Bind Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gBindInfoLine);
 
 #if !defined (DISABLE_GREENPOWER_BASIC_PROXY) && (ZG_BUILD_RTR_TYPE)
   /* Request Async Line for GP Info */
-  retVal = CUI_statusLineResourceRequest(gCuiHandle, "    GP Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gGpInfoLine);
+  //retVal = CUI_statusLineResourceRequest(gCuiHandle, "    GP Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gGpInfoLine);
 
-  UI_UpdateGpStatusLine();
+  //UI_UpdateGpStatusLine();
 #endif
 
 
@@ -2181,10 +2183,10 @@ CUI_clientHandle_t UI_Init(uint8_t  zclSampleApp_Entity, uint32_t *zclSampleAppE
   (void) retVal;
 
   //Update ZDO status line
-  UI_DeviceStateUpdated(NULL);
+  //UI_DeviceStateUpdated(NULL);
 
   //Update BDB status line
-  UI_UpdateBdbStatusLine(NULL);
+  //UI_UpdateBdbStatusLine(NULL);
 
   return gCuiHandle;
 
@@ -2395,7 +2397,7 @@ void UI_DeviceStateUpdated(zstack_devStateChangeInd_t *pReq)
     }
   }
 
-  CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gZdoInfoLine, lineFormat);
+  //CUI_retVal_t retVal = CUI_statusLinePrintf(gCuiHandle, gZdoInfoLine, lineFormat);
 }
 
 #if !defined (DISABLE_GREENPOWER_BASIC_PROXY) && (ZG_BUILD_RTR_TYPE)

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="windows-1252"?>
 <!--  This file conforms to the DTD xdc/bld/build.dtd -->
 <package name="configPkg" version="" producerId="undefined">
     <units>
@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/app_pem4f.c"/>
     </sources>
     <configscripts>
-        <srcFile name="/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/app.cfg"/>
+        <srcFile name="C:/Users/jheer/git/senior_design_iot_zigbee/app.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -25,7 +25,7 @@
             platform="ti.platforms.tiva:TM4C1294NCPDT:1"
             isa="v7M4"
             suffix="em4f"
-            rootDir="/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS"
+            rootDir="C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS"
             os="undefined"
             rts="ti.targets.arm.rtsarm">
             <model endian="little"
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/app_pem4f.cfg"
         xCfgPrefix="package/cfg/app_pem4f"
-        cfgScript="/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/app.cfg"
+        cfgScript="C:/Users/jheer/git/senior_design_iot_zigbee/app.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/app_pem4f.cfg"
         xCfgPrefix="package/cfg/app_pem4f"
-        cfgScript="/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/app.cfg"
+        cfgScript="C:/Users/jheer/git/senior_design_iot_zigbee/app.cfg"
         cfgArgs="null"
         />
     </executables>

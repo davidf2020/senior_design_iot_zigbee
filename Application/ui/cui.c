@@ -1550,7 +1550,7 @@ CUI_retVal_t CUI_statusLineResourceRequest(const CUI_clientHandle_t _clientHandl
     /*
      * Print a default '--' value to the line
      */
-    CUI_statusLinePrintf(_clientHandle, *_pLineId, "--");
+    //CUI_statusLinePrintf(_clientHandle, *_pLineId, "--");
 
     return CUI_SUCCESS;
 }
@@ -2230,8 +2230,8 @@ static CUI_retVal_t CUI_acquireStatusLine(const CUI_clientHandle_t _clientHandle
     //Add a ": " to every label
     memset(gStatusLineResources[clientIndex][freeIndex].label, '\0', sizeof(gStatusLineResources[clientIndex][freeIndex].label));
     System_snprintf(gStatusLineResources[clientIndex][freeIndex].label,
-             MAX_STATUS_LINE_LABEL_LEN + strlen(CUI_LABEL_VAL_SEP),
-             "%s%s", _pLabel, CUI_LABEL_VAL_SEP);
+             MAX_STATUS_LINE_LABEL_LEN + strlen(""),
+             "%s%s", _pLabel, "");
     gStatusLineResources[clientIndex][freeIndex].lineOffset = offset;
     gStatusLineResources[clientIndex][freeIndex].clientHash = _clientHandle;
     gStatusLineResources[clientIndex][freeIndex].status = CUI_ACQUIRED;

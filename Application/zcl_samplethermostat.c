@@ -133,6 +133,9 @@
  * GLOBAL FUNCTIONS
  */
 
+//external variables
+extern uint8_t aExtendedAddress[];
+
 /*********************************************************************
  * LOCAL VARIABLES
  */
@@ -722,7 +725,7 @@ static void zclSampleThermostat_process_loop(void)
 
 #ifdef USE_ZCL_SAMPLEAPP_UI
             //Update status line
-            zclSampleThermostat_UpdateStatusLine();
+            //zclSampleThermostat_UpdateStatusLine();
             zclSampleThermostat_UpdateLedState();
 #endif
         }
@@ -1421,53 +1424,75 @@ static void zclSampleThermostat_processKey(uint32_t _btn, Button_EventMask _butt
 static void zclSampleThermostat_InitializeStatusLine(CUI_clientHandle_t gCuiHandle)
 {
     /* Request Async Line for Light application Info */
-    CUI_statusLineResourceRequest(gCuiHandle, "   APP Info"CUI_DEBUG_MSG_START"1"CUI_DEBUG_MSG_END, &gSampleThermostatInfoLine1);
-    CUI_statusLineResourceRequest(gCuiHandle, "   APP Info"CUI_DEBUG_MSG_START"2"CUI_DEBUG_MSG_END, &gSampleThermostatInfoLine2);
+   CUI_statusLineResourceRequest(gCuiHandle, "", &gSampleThermostatInfoLine1);
+   //CUI_statusLineResourceRequest(gCuiHandle, "   APP Info"CUI_DEBUG_MSG_START"2"CUI_DEBUG_MSG_END, &gSampleThermostatInfoLine2);
 
     zclSampleThermostat_UpdateStatusLine();
 }
 
 static void zclSampleThermostat_UpdateStatusLine(void)
 {
-    char lineFormat1[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
-    char lineFormat2[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
-    strcat(lineFormat1, "["CUI_COLOR_YELLOW"Remote Temperature"CUI_COLOR_RESET"] ");
+
+    char lineFormat1[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
+    char* outputUart = (char*)malloc(100*sizeof(char));
+
+    for(int i =0; i < 100; i++){
+        outputUart[i] = '\0';
+    }
+    //char lineFormat2[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
+
+    strcat(outputUart, "I ");
+
+    strcat(outputUart, "12345 ");
+
+
+    strcat(outputUart, "T ");
 
     if(zclSampleThermostat_LocalTemperature == ATTR_INVALID_MEASUREMENT_HVAC_THERMOSTAT_LOCAL_TEMPERATURE)
     {
-        strcat(lineFormat1, "Invalid");
+        strcat(outputUart, "Invalid \n");
     }
     else
     {
-        strcat(lineFormat1, "%dC");
+        strcat(outputUart, "%d \n");
     }
 
-    strcat(lineFormat1, " ["CUI_COLOR_YELLOW"System Mode"CUI_COLOR_RESET"] ");
+    //insert code to add light intesity here
 
-    switch(zclSampleThermostat_SystemMode)
-    {
-        case HVAC_THERMOSTAT_SYSTEM_MODE_HEAT:
-            strcat(lineFormat1, CUI_COLOR_RED"HEAT"CUI_COLOR_RESET);
-        break;
-        case HVAC_THERMOSTAT_SYSTEM_MODE_COOL:
-            strcat(lineFormat1, CUI_COLOR_CYAN"COOL"CUI_COLOR_RESET);
-        break;
-        case HVAC_THERMOSTAT_SYSTEM_MODE_OFF:
-            strcat(lineFormat1, "OFF ");
-        break;
-    }
 
-    strcat(lineFormat2, "["CUI_COLOR_YELLOW"Cooling Set Temp"CUI_COLOR_RESET"] %dC ");
 
-    strcat(lineFormat2, "["CUI_COLOR_YELLOW"Heating Set Temp"CUI_COLOR_RESET"] %dC");
+    //strcat(outputUart, " ["CUI_COLOR_YELLOW"System Mode"CUI_COLOR_RESET"] ");
 
-    CUI_statusLinePrintf(gCuiHandle, gSampleThermostatInfoLine1, lineFormat1,
+//    switch(zclSampleThermostat_SystemMode)
+//    {
+//        case HVAC_THERMOSTAT_SYSTEM_MODE_HEAT:
+//            strcat(outputUart, CUI_COLOR_RED"HEAT"CUI_COLOR_RESET);
+//        break;
+//        case HVAC_THERMOSTAT_SYSTEM_MODE_COOL:
+//            strcat(outputUart, CUI_COLOR_CYAN"COOL"CUI_COLOR_RESET);
+//        break;
+//        case HVAC_THERMOSTAT_SYSTEM_MODE_OFF:
+//            strcat(outputUart, "OFF ");
+//        break;
+//    }
+//
+//    strcat(lineFormat2, "["CUI_COLOR_YELLOW"Cooling Set Temp"CUI_COLOR_RESET"] %dC ");
+//
+//    strcat(lineFormat2, "["CUI_COLOR_YELLOW"Heating Set Temp"CUI_COLOR_RESET"] %dC");
+
+    CUI_statusLinePrintf(gCuiHandle, gSampleThermostatInfoLine1, outputUart,
                         (zclSampleThermostat_LocalTemperature / 100));
 
-    CUI_statusLinePrintf(gCuiHandle, gSampleThermostatInfoLine2, lineFormat2,
-                        (zclSampleThermostat_OccupiedCoolingSetpoint / 100),
-                        (zclSampleThermostat_OccupiedHeatingSetpoint / 100 ));
+    //CUI_writeString(lineFormat1, strlen(lineFormat1));
+
+    zclSampleThermostat_LocalTemperature = ATTR_INVALID_MEASUREMENT_HVAC_THERMOSTAT_LOCAL_TEMPERATURE;
+
+
+//    CUI_statusLinePrintf(gCuiHandle, gSampleThermostatInfoLine2, lineFormat2,
+//                        (zclSampleThermostat_OccupiedCoolingSetpoint / 100),
+//                        (zclSampleThermostat_OccupiedHeatingSetpoint / 100 ));
+
 }
 
 #endif

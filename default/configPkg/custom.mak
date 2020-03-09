@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/app_pem4f.xdl
-	$(SED) 's"^\"\(package/cfg/app_pem4fcfg.cmd\)\"$""\"/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/configPkg/\1\""' package/cfg/app_pem4f.xdl > $@
+	$(SED) 's"^\"\(package/cfg/app_pem4fcfg.cmd\)\"$""\"C:/Users/jheer/git/senior_design_iot_zigbee/default/configPkg/\1\""' package/cfg/app_pem4f.xdl > $@
 	-$(SETDATE) -r:max package/cfg/app_pem4f.h compiler.opt compiler.opt.defs

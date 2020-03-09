@@ -4,7 +4,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.CC2652R1F.ccxml.Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0" value="${build_artifact:zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.CC2652R1F.ccxml.Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0" value="zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.CC2652R1F.ccxml.Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0" value="/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.CC2652R1F.ccxml.Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0" value="C:/Users\jheer\git\senior_design_iot_zigbee\default\zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs"/>
 </listAttribute>
