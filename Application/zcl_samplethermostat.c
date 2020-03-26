@@ -1440,9 +1440,10 @@ static void zclSampleThermostat_UpdateStatusLine(void)
     for(int i =0; i < 100; i++){
         outputUart[i] = '\0';
     }
+    outputUart[0] = 'I';
     //char lineFormat2[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
-    strcat(outputUart, "I ");
+    //strcat(outputUart, "I ");
 
     strcat(outputUart, "12345 ");
 
