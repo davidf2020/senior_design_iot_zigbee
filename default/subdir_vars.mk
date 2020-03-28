@@ -2,8 +2,6 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-SHELL = cmd.exe
-
 # Add inputs and outputs from these tool invocations to the build variables 
 CFG_SRCS += \
 ../app.cfg 
@@ -56,33 +54,33 @@ GEN_MISC_FILES += \
 ./syscfg/syscfg_c.rov.xs 
 
 GEN_MISC_DIRS__QUOTED += \
-"configPkg\" \
-"syscfg\" 
+"configPkg/" \
+"syscfg/" 
 
 OBJS__QUOTED += \
 "CC26X2R1_LAUNCHXL_fxns.obj" \
-"syscfg\ti_radio_config.obj" \
-"syscfg\ti_devices_config.obj" \
-"syscfg\ti_drivers_config.obj" 
+"syscfg/ti_radio_config.obj" \
+"syscfg/ti_devices_config.obj" \
+"syscfg/ti_drivers_config.obj" 
 
 GEN_MISC_FILES__QUOTED += \
-"syscfg\ti_zstack_config.h" \
-"syscfg\ti_radio_config.h" \
-"syscfg\ti_drivers_config.h" \
-"syscfg\syscfg_c.rov.xs" 
+"syscfg/ti_zstack_config.h" \
+"syscfg/ti_radio_config.h" \
+"syscfg/ti_drivers_config.h" \
+"syscfg/syscfg_c.rov.xs" 
 
 C_DEPS__QUOTED += \
 "CC26X2R1_LAUNCHXL_fxns.d" \
-"syscfg\ti_radio_config.d" \
-"syscfg\ti_devices_config.d" \
-"syscfg\ti_drivers_config.d" 
+"syscfg/ti_radio_config.d" \
+"syscfg/ti_devices_config.d" \
+"syscfg/ti_drivers_config.d" 
 
 GEN_FILES__QUOTED += \
-"configPkg\linker.cmd" \
-"configPkg\compiler.opt" \
-"syscfg\ti_radio_config.c" \
-"syscfg\ti_devices_config.c" \
-"syscfg\ti_drivers_config.c" 
+"configPkg/linker.cmd" \
+"configPkg/compiler.opt" \
+"syscfg/ti_radio_config.c" \
+"syscfg/ti_devices_config.c" \
+"syscfg/ti_drivers_config.c" 
 
 C_SRCS__QUOTED += \
 "../CC26X2R1_LAUNCHXL_fxns.c" \

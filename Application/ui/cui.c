@@ -419,6 +419,8 @@ CUI_retVal_t CUI_init(CUI_params_t* _pParams)
                     gUartWriteComplete = true;
 
                     strncpy(menuBuff, CUI_ESC_CLR CUI_ESC_TRM_MODE CUI_ESC_CUR_HIDE, sizeof(menuBuff));
+
+                    /* CHANGED menuBuff to "" to test*/
                     if (CUI_SUCCESS != CUI_writeString(menuBuff, strlen(menuBuff)))
                     {
                         UART_close(gUartHandle);
@@ -1609,7 +1611,8 @@ CUI_retVal_t CUI_statusLinePrintf(const CUI_clientHandle_t _clientHandle,
     }
     else
     {
-        offset = CUI_INITIAL_STATUS_OFFSET;
+        offset = 0;
+        //offset = CUI_INITIAL_STATUS_OFFSET;
     }
     offset += gStatusLineResources[clientIndex][_lineId].lineOffset;
 

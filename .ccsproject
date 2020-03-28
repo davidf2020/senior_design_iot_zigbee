@@ -13,6 +13,6 @@
 	<ignoreDefaultDeviceSettings value="true"/>
 	<ignoreDefaultCCSSettings value="true"/>
 	<templateProperties value="id=zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.projectspec.zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs,type=rtsc,xdcToolsVersion=3_60_00_24_core,target=ti.targets.arm.elf.M4F,platform=ti.platforms.simplelink:CC2652R1F,buildProfile=release,isHybrid=true,configuroOptions= --compileOptions &quot;${COMPILER_FLAGS} &quot;"/>
-	<origin value="/Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/examples/rtos/CC26X2R1_LAUNCHXL/zstack/zc_thermostat/tirtos/ccs/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.projectspec"/>
+	<origin value="/Users/davidfernandez/workspace_v9/senior_design_iot_zigbee"/>
 	<filesToOpen value=""/>
 </projectOptions>

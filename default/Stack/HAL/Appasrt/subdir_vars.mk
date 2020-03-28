@@ -2,8 +2,6 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-SHELL = cmd.exe
-
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Stack/HAL/Appasrt/hal_appasrt.c 
@@ -15,10 +13,10 @@ OBJS += \
 ./Stack/HAL/Appasrt/hal_appasrt.obj 
 
 OBJS__QUOTED += \
-"Stack\HAL\Appasrt\hal_appasrt.obj" 
+"Stack/HAL/Appasrt/hal_appasrt.obj" 
 
 C_DEPS__QUOTED += \
-"Stack\HAL\Appasrt\hal_appasrt.d" 
+"Stack/HAL/Appasrt/hal_appasrt.d" 
 
 C_SRCS__QUOTED += \
 "../Stack/HAL/Appasrt/hal_appasrt.c" 

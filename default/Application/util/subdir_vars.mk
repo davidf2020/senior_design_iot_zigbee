@@ -2,8 +2,6 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-SHELL = cmd.exe
-
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Application/util/mac_util.c \
@@ -18,12 +16,12 @@ OBJS += \
 ./Application/util/util_timer.obj 
 
 OBJS__QUOTED += \
-"Application\util\mac_util.obj" \
-"Application\util\util_timer.obj" 
+"Application/util/mac_util.obj" \
+"Application/util/util_timer.obj" 
 
 C_DEPS__QUOTED += \
-"Application\util\mac_util.d" \
-"Application\util\util_timer.d" 
+"Application/util/mac_util.d" \
+"Application/util/util_timer.d" 
 
 C_SRCS__QUOTED += \
 "../Application/util/mac_util.c" \

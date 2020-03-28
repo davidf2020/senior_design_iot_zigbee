@@ -1433,7 +1433,6 @@ static void zclSampleThermostat_InitializeStatusLine(CUI_clientHandle_t gCuiHand
 static void zclSampleThermostat_UpdateStatusLine(void)
 {
 
-
     char lineFormat1[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
     char* outputUart = (char*)malloc(100*sizeof(char));
 
@@ -1445,7 +1444,7 @@ static void zclSampleThermostat_UpdateStatusLine(void)
 
     //strcat(outputUart, "I ");
 
-    strcat(outputUart, "12345 ");
+    strcat(outputUart, " 12345 ");
 
 
     strcat(outputUart, "T ");
