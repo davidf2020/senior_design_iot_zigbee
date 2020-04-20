@@ -1,7 +1,7 @@
 # FIXED
 
 Application/Services/saddr.obj: ../Application/Services/saddr.c
-Application/Services/saddr.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h
+Application/Services/saddr.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdint.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_stdint40.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/stdint.h
@@ -10,7 +10,7 @@ Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cg
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/machine/_types.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/machine/_stdint.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_stdint.h
-Application/Services/saddr.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h
+Application/Services/saddr.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_ti_config.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/linkage.h
@@ -181,7 +181,7 @@ Application/Services/saddr.obj: ../Application/Services/saddr.h
 Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
 
 ../Application/Services/saddr.c: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdint.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_stdint40.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/stdint.h: 
@@ -190,7 +190,7 @@ Application/Services/saddr.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cg
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/machine/_types.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/machine/_stdint.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_stdint.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_ti_config.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/linkage.h: 

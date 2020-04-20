@@ -236,35 +236,35 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out \
+i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out \
 
 EXE_OUTPUTS__QUOTED += \
-"zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out" \
+"i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out" \
 
 BIN_OUTPUTS += \
-zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex \
+i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex \
 
 BIN_OUTPUTS__QUOTED += \
-"zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex" \
+"i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex" \
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out"
+	@$(MAKE) --no-print-directory -Onone "i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out"
 
 # Tool invocations
-zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armcl" --cmd_file="/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/Config/f8wcoord.opts"  -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O4 --opt_for_speed=0 --define=ZCL_READ --define=ZCL_DISCOVER --define=ZCL_WRITE --define=ZCL_BASIC --define=ZCL_IDENTIFY --define=ZCL_HVAC_CLUSTER --define=BDB_REPORTING --define=ZCL_REPORT_DESTINATION_DEVICE --define=TIMAC_ROM_IMAGE_BUILD --define=TIMAC_ROM_PATCH --define=USE_ZCL_SAMPLEAPP_UI --define=MAX_STATUS_LINES=10 --define=ZSTACK_AESECB --define=BOARD_DISPLAY_USE_UART --define=FREQ_2_4G --define=OSAL_PORT2TIRTOS --define=OSAL_PORT2TIRTOS_OSALMAP --define=RCN_APP_ASSERT --define=HAL_ASSERT_SPIN --define=ZDO_API_BASIC --define=TC_LINKKEY_JOIN --define=NV_RESTORE --define=NV_INIT --define=FEATURE_NON_BEACON_MODE --define=ZCL_STANDALONE --define=MAX_DEVICE_TABLE_ENTRIES=50 --define=NVOCMP_NVPAGES=2 --define=DEVICE_FAMILY=cc26x0 --define=CC26X2R1_LAUNCHXL --define=DeviceFamily_CC26X2 -g --c99 --plain_char=unsigned --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --embedded_constants=on --unaligned_access=on --enum_type=packed --wchar_t=16 --abi=eabi --common=on --fp_reassoc=off --sat_reassoc=off -z -m"zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.map" -i"/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/lib" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model --unused_section_elimination=on -o "zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out" $(ORDERED_OBJS)
+	"/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armcl" --cmd_file="/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/Config/f8wcoord.opts"  -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O4 --opt_for_speed=0 --define=ZCL_READ --define=ZCL_DISCOVER --define=ZCL_WRITE --define=ZCL_BASIC --define=ZCL_IDENTIFY --define=ZCL_HVAC_CLUSTER --define=BDB_REPORTING --define=ZCL_REPORT_DESTINATION_DEVICE --define=TIMAC_ROM_IMAGE_BUILD --define=TIMAC_ROM_PATCH --define=USE_ZCL_SAMPLEAPP_UI --define=MAX_STATUS_LINES=10 --define=ZSTACK_AESECB --define=BOARD_DISPLAY_USE_UART --define=FREQ_2_4G --define=OSAL_PORT2TIRTOS --define=OSAL_PORT2TIRTOS_OSALMAP --define=RCN_APP_ASSERT --define=HAL_ASSERT_SPIN --define=ZDO_API_BASIC --define=TC_LINKKEY_JOIN --define=NV_RESTORE --define=NV_INIT --define=FEATURE_NON_BEACON_MODE --define=ZCL_STANDALONE --define=MAX_DEVICE_TABLE_ENTRIES=50 --define=NVOCMP_NVPAGES=2 --define=DEVICE_FAMILY=cc26x0 --define=CC26X2R1_LAUNCHXL --define=DeviceFamily_CC26X2 -g --c99 --plain_char=unsigned --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --embedded_constants=on --unaligned_access=on --enum_type=packed --wchar_t=16 --abi=eabi --common=on --fp_reassoc=off --sat_reassoc=off -z -m"i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.map" -i"/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/lib" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model --unused_section_elimination=on -o "i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
 
-zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex: $(EXE_OUTPUTS)
+i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex: $(EXE_OUTPUTS)
 	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo 'Invoking: ARM Hex Utility'
-	"/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armhex"  -o "zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex" $(EXE_OUTPUTS__QUOTED)
+	"/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armhex"  -o "i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
@@ -281,7 +281,7 @@ clean:
 	-@echo ' '
 
 post-build:
-	-/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armhex -order MS --memwidth=8 --romwidth=8 --intel -o zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs
+	-/Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armhex -order MS --memwidth=8 --romwidth=8 --intel -o i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs.hex i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -1,7 +1,7 @@
 # FIXED
 
 Stack/Config/mac_user_config.obj: ../Stack/Config/mac_user_config.c
-Stack/Config/mac_user_config.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h
+Stack/Config/mac_user_config.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/DeviceFamily.h
 Stack/Config/mac_user_config.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdint.h
 Stack/Config/mac_user_config.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_stdint40.h
@@ -13,7 +13,7 @@ Stack/Config/mac_user_config.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-
 Stack/Config/mac_user_config.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_stdint.h
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/PIN.h
 Stack/Config/mac_user_config.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
-Stack/Config/mac_user_config.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_radio_config.h
+Stack/Config/mac_user_config.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_radio_config.h
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h
 Stack/Config/mac_user_config.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/string.h
 Stack/Config/mac_user_config.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_ti_config.h
@@ -29,7 +29,7 @@ Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/rf_prop_cmd.h
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/rf_ble_cmd.h
 Stack/Config/mac_user_config.obj: ../Stack/Config/mac_user_config.h
-Stack/Config/mac_user_config.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h
+Stack/Config/mac_user_config.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/chipinfo.h
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_types.h
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/../inc/hw_chip_def.h
@@ -168,7 +168,7 @@ Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_
 Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/cryptoutils/cryptokey/CryptoKeyPlaintext.h
 
 ../Stack/Config/mac_user_config.c: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/DeviceFamily.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdint.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_stdint40.h: 
@@ -180,7 +180,7 @@ Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_stdint.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/PIN.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_radio_config.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_radio_config.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/rf_mailbox.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/string.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_ti_config.h: 
@@ -196,7 +196,7 @@ Stack/Config/mac_user_config.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/rf_prop_cmd.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/rf_ble_cmd.h: 
 ../Stack/Config/mac_user_config.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/chipinfo.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/hw_types.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/cc13x2_cc26x2/driverlib/../inc/../inc/hw_chip_def.h: 

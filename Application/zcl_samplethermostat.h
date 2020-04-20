@@ -95,6 +95,7 @@ extern int16_t zclSampleThermostat_OccupiedCoolingSetpoint;
 extern int16_t zclSampleThermostat_OccupiedHeatingSetpoint;
 
 extern int16_t zclSampleThermostat_LocalTemperature;
+extern int16_t iotSampleTempSensor_LightIntensity_ReceivedValue;
 
 extern int16_t zclSampleThermostat_AbsMinHeatSetpointLimit;
 

@@ -189,7 +189,7 @@ Stack/osal_port/osal_port.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_
 Stack/osal_port/osal_port.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/dpl/ClockP.h
 Stack/osal_port/osal_port.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/utils/Random.h
 Stack/osal_port/osal_port.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/cfg/global.h
-Stack/osal_port/osal_port.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/configPkg/package/cfg/app_pem4f.h
+Stack/osal_port/osal_port.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/configPkg/package/cfg/app_pem4f.h
 Stack/osal_port/osal_port.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/kernel/tirtos/packages/ti/sysbios/heaps/HeapCallback.h
 Stack/osal_port/osal_port.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/Types.h
 Stack/osal_port/osal_port.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/IInstance.h
@@ -420,7 +420,7 @@ Stack/osal_port/osal_port.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/dpl/ClockP.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/utils/Random.h: 
 /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/cfg/global.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/configPkg/package/cfg/app_pem4f.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/configPkg/package/cfg/app_pem4f.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/kernel/tirtos/packages/ti/sysbios/heaps/HeapCallback.h: 
 /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/Types.h: 
 /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/IInstance.h: 

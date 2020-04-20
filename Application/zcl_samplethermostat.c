@@ -129,6 +129,7 @@
  * GLOBAL VARIABLES
  */
 
+
 /*********************************************************************
  * GLOBAL FUNCTIONS
  */
@@ -1184,10 +1185,12 @@ static void zclSampleThermostat_ProcessInReportCmd( zclIncoming_t *pInMsg )
   if ( pInTempSensorReport->attrList[0].attrID != ATTRID_MS_TEMPERATURE_MEASURED_VALUE )
   {
     return;
+  }else{
+      zclSampleThermostat_LocalTemperature = BUILD_UINT16(pInTempSensorReport->attrList[0].attrData[0], pInTempSensorReport->attrList[0].attrData[1]);
+      iotSampleTempSensor_LightIntensity_ReceivedValue = BUILD_UINT16(pInTempSensorReport->attrList[0].attrData[2], pInTempSensorReport->attrList[0].attrData[3]);
   }
 
   // store the current temperature value sent over the air from temperature sensor
-  zclSampleThermostat_LocalTemperature = BUILD_UINT16(pInTempSensorReport->attrList[0].attrData[0], pInTempSensorReport->attrList[0].attrData[1]);
 
 #ifdef USE_ZCL_SAMPLEAPP_UI
   zclSampleThermostat_UpdateStatusLine();
@@ -1427,8 +1430,10 @@ static void zclSampleThermostat_InitializeStatusLine(CUI_clientHandle_t gCuiHand
    CUI_statusLineResourceRequest(gCuiHandle, "", &gSampleThermostatInfoLine1);
    //CUI_statusLineResourceRequest(gCuiHandle, "   APP Info"CUI_DEBUG_MSG_START"2"CUI_DEBUG_MSG_END, &gSampleThermostatInfoLine2);
 
+
     zclSampleThermostat_UpdateStatusLine();
 }
+
 
 static void zclSampleThermostat_UpdateStatusLine(void)
 {
@@ -1439,6 +1444,7 @@ static void zclSampleThermostat_UpdateStatusLine(void)
     for(int i =0; i < 100; i++){
         outputUart[i] = '\0';
     }
+
     outputUart[0] = 'I';
     //char lineFormat2[MAX_STATUS_LINE_VALUE_LEN] = {'\0'};
 
@@ -1446,12 +1452,14 @@ static void zclSampleThermostat_UpdateStatusLine(void)
 
     strcat(outputUart, " 12345 ");
 
+    if(iotSampleTempSensor_LightIntensity_ReceivedValue == ATTR_INVALID_MEASUREMENT_HVAC_THERMOSTAT_LOCAL_TEMPERATURE){
+        strcat(outputUart, "L INVALID T ");
+    }else{
+        strcat(outputUart, "L %d T ");
+    }
 
-    strcat(outputUart, "T ");
-
-    if(zclSampleThermostat_LocalTemperature == ATTR_INVALID_MEASUREMENT_HVAC_THERMOSTAT_LOCAL_TEMPERATURE)
-    {
-        strcat(outputUart, "Invalid \n");
+    if(zclSampleThermostat_LocalTemperature == ATTR_INVALID_MEASUREMENT_HVAC_THERMOSTAT_LOCAL_TEMPERATURE){
+        strcat(outputUart, "INVALID \n");
     }
     else
     {
@@ -1482,7 +1490,7 @@ static void zclSampleThermostat_UpdateStatusLine(void)
 //    strcat(lineFormat2, "["CUI_COLOR_YELLOW"Heating Set Temp"CUI_COLOR_RESET"] %dC");
 
     CUI_statusLinePrintf(gCuiHandle, gSampleThermostatInfoLine1, outputUart,
-                        (zclSampleThermostat_LocalTemperature / 100));
+                        (zclSampleThermostat_LocalTemperature / 100), (iotSampleTempSensor_LightIntensity_ReceivedValue));
 
     //CUI_writeString(lineFormat1, strlen(lineFormat1));
 

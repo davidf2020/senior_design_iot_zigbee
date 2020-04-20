@@ -55,6 +55,7 @@
 #include "zcl_appliance_control.h"
 #include "zcl_appliance_statistics.h"
 #include "zcl_hvac.h"
+#include "zcl_ms.h"
 
 #include "zcl_samplethermostat.h"
 
@@ -111,7 +112,7 @@ int16_t zclSampleThermostat_AbsMinCoolSetpointLimit;
 int16_t zclSampleThermostat_AbsMaxCoolSetpointLimit;
 int16_t zclSampleThermostat_OccupiedHeatingSetpoint;
 int16_t zclSampleThermostat_OccupiedCoolingSetpoint;
-
+int16_t iotSampleTempSensor_LightIntensity_ReceivedValue = 0;
 
 
 uint8_t zclSampleThermostat_ControlSequenceOfOperation;
@@ -303,6 +304,16 @@ CONST zclAttrRec_t zclSampleThermostat_Attrs[] =
       (void *)&zclSampleThermostat_thermostat_clusterRevision
     }
   },
+  {                                                                 //INDEX 10 ADDED by david fernandez
+    ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    { // Attribute record
+    ATTRID_MS_ILLUMINANCE_MEASURED_VALUE,
+    ZCL_DATATYPE_INT16,
+    ACCESS_CONTROL_READ | ACCESS_REPORTABLE,
+    (void *)&iotSampleTempSensor_LightIntensity_ReceivedValue
+    }
+  },
+
 };
 
 uint8_t CONST zclSampleThermostat_NumAttributes = ( sizeof(zclSampleThermostat_Attrs) / sizeof(zclSampleThermostat_Attrs[0]) );

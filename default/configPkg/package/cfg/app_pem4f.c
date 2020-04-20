@@ -1690,7 +1690,7 @@ __FAR__ const xdc_SizeT ti_sysbios_knl_Task_Module_State_terminatedQ__O = offset
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/configPkg/package/cfg/app_pem4f");
+xdc__META(__ASM__, "@(#)__ASM__ = /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/configPkg/package/cfg/app_pem4f");
 
 /*
  *  ======== __ISA__ ========

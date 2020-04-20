@@ -225,7 +225,7 @@ Application/ui/cui.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/package
 Application/ui/cui.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/IGateProvider.h
 Application/ui/cui.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/package/System_SupportProxy.h
 Application/ui/cui.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/package/System_Module_GateProxy.h
-Application/ui/cui.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h
+Application/ui/cui.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h
 Application/ui/cui.obj: ../Application/ui/cui.h
 Application/ui/cui.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 
@@ -454,6 +454,6 @@ Application/ui/cui.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18
 /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/IGateProvider.h: 
 /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/package/System_SupportProxy.h: 
 /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/package/System_Module_GateProxy.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h: 
 ../Application/ui/cui.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 

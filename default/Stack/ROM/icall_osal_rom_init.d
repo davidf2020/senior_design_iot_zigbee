@@ -1,7 +1,7 @@
 # FIXED
 
 Stack/ROM/icall_osal_rom_init.obj: ../Stack/ROM/icall_osal_rom_init.c
-Stack/ROM/icall_osal_rom_init.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h
+Stack/ROM/icall_osal_rom_init.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h
 Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdint.h
 Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_stdint40.h
 Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/stdint.h
@@ -176,13 +176,13 @@ Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_c
 Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/IGateProvider.h
 Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/kernel/tirtos/packages/ti/sysbios/BIOS__epilogue.h
 Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/kernel/tirtos/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
-Stack/ROM/icall_osal_rom_init.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Application/Services/saddr.h
+Stack/ROM/icall_osal_rom_init.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Application/Services/saddr.h
 Stack/ROM/icall_osal_rom_init.obj: /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
 Stack/ROM/icall_osal_rom_init.obj: ../Stack/ROM/rom_jt_def_154.h
-Stack/ROM/icall_osal_rom_init.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h
+Stack/ROM/icall_osal_rom_init.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h
 
 ../Stack/ROM/icall_osal_rom_init.c: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/osal_port/osal_port.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdint.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/_stdint40.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/stdint.h: 
@@ -357,7 +357,7 @@ Stack/ROM/icall_osal_rom_init.obj: /Users/davidfernandez/workspace_v9/zc_thermos
 /Applications/ti/ccs920/xdctools_3_60_01_27_core/packages/xdc/runtime/IGateProvider.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/kernel/tirtos/packages/ti/sysbios/BIOS__epilogue.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/kernel/tirtos/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Application/Services/saddr.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Application/Services/saddr.h: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 
 ../Stack/ROM/rom_jt_def_154.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/Stack/HAL/Platform/hal_types.h: 

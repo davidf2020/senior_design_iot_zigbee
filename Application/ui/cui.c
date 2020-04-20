@@ -70,29 +70,57 @@
 
 #define CUI_NL_CR               "\n\r" // New line carriage return
 
-#define CUI_ESC_UP              "\033[A"
-#define CUI_ESC_DOWN            "\033[B"
-#define CUI_ESC_RIGHT           "\033[C"
-#define CUI_ESC_LEFT            "\033[D"
-#define CUI_ESC_ESC             "\033\0\0\0\0"
+//#define CUI_ESC_UP              "\033[A"
+//#define CUI_ESC_DOWN            "\033[B"
+//#define CUI_ESC_RIGHT           "\033[C"
+//#define CUI_ESC_LEFT            "\033[D"
+//#define CUI_ESC_ESC             "\033\0\0\0\0"
+//
+///*
+// * Escape sequences for terminal control.
+// * Any sequences with '%' in them require require additional information to be used
+// *  as is.
+// */
+//#define CUI_ESC_TRM_MODE            "\033[20"    // Set line feed mode for the terminal
+//
+//#define CUI_ESC_CLR                 "\033[2J"    // Clear the entire screen
+//#define CUI_ESC_CLR_UP              "\033[1J"    // Clear screen from cursor up
+//#define CUI_ESC_CLR_STAT_LINE_VAL   "\033[2K"    // Clear the status line
+//
+//#define CUI_ESC_CUR_HIDE            "\033[?25l"  // Hide cursor
+//#define CUI_ESC_CUR_SHOW            "\033[?25h"  // Show cursor
+//#define CUI_ESC_CUR_HOME            "\033[H"     // Move cursor to the top left of the terminal
+//#define CUI_ESC_CUR_MENU_BTM        "\033[3;%dH" // Move cursor to the bottom right of the menu
+//#define CUI_ESC_CUR_LINE            "\033[%d;0H" // Move cursor to a line of choice
+//#define CUI_ESC_CUR_ROW_COL         "\033[%d;%dH"// Move cursor to row and col
+
+
+/**TRYING TO GET RID OF CRAP BEFORE PRINTING**/
+#define CUI_ESC_UP              ""
+#define CUI_ESC_DOWN            ""
+#define CUI_ESC_RIGHT           ""
+#define CUI_ESC_LEFT            ""
+#define CUI_ESC_ESC             ""
 
 /*
  * Escape sequences for terminal control.
  * Any sequences with '%' in them require require additional information to be used
  *  as is.
  */
-#define CUI_ESC_TRM_MODE            "\033[20"    // Set line feed mode for the terminal
+#define CUI_ESC_TRM_MODE            ""    // Set line feed mode for the terminal
 
-#define CUI_ESC_CLR                 "\033[2J"    // Clear the entire screen
-#define CUI_ESC_CLR_UP              "\033[1J"    // Clear screen from cursor up
-#define CUI_ESC_CLR_STAT_LINE_VAL   "\033[2K"    // Clear the status line
+#define CUI_ESC_CLR                 ""    // Clear the entire screen
+#define CUI_ESC_CLR_UP              ""    // Clear screen from cursor up
+#define CUI_ESC_CLR_STAT_LINE_VAL   ""    // Clear the status line
 
-#define CUI_ESC_CUR_HIDE            "\033[?25l"  // Hide cursor
-#define CUI_ESC_CUR_SHOW            "\033[?25h"  // Show cursor
-#define CUI_ESC_CUR_HOME            "\033[H"     // Move cursor to the top left of the terminal
-#define CUI_ESC_CUR_MENU_BTM        "\033[3;%dH" // Move cursor to the bottom right of the menu
-#define CUI_ESC_CUR_LINE            "\033[%d;0H" // Move cursor to a line of choice
-#define CUI_ESC_CUR_ROW_COL         "\033[%d;%dH"// Move cursor to row and col
+#define CUI_ESC_CUR_HIDE            ""  // Hide cursor
+#define CUI_ESC_CUR_SHOW            ""  // Show cursor
+#define CUI_ESC_CUR_HOME            ""     // Move cursor to the top left of the terminal
+#define CUI_ESC_CUR_MENU_BTM        "" // Move cursor to the bottom right of the menu
+#define CUI_ESC_CUR_LINE            "" // Move cursor to a line of choice
+#define CUI_ESC_CUR_ROW_COL         ""// Move cursor to row and col
+
+/*********************************************/
 
 
 

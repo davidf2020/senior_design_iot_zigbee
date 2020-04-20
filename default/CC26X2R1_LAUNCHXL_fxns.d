@@ -31,7 +31,7 @@ CC26X2R1_LAUNCHXL_fxns.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_
 CC26X2R1_LAUNCHXL_fxns.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/dpl/HwiP.h
 CC26X2R1_LAUNCHXL_fxns.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/PIN.h
 CC26X2R1_LAUNCHXL_fxns.obj: /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/DeviceFamily.h
-CC26X2R1_LAUNCHXL_fxns.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h
+CC26X2R1_LAUNCHXL_fxns.obj: /Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h
 
 ../CC26X2R1_LAUNCHXL_fxns.c: 
 /Applications/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 
@@ -64,4 +64,4 @@ CC26X2R1_LAUNCHXL_fxns.obj: /Users/davidfernandez/workspace_v9/zc_thermostat_CC2
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/dpl/HwiP.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/drivers/PIN.h: 
 /Applications/ti/simplelink_cc13x2_26x2_sdk_3_30_00_03/source/ti/devices/DeviceFamily.h: 
-/Users/davidfernandez/workspace_v9/zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h: 
+/Users/davidfernandez/workspace_v9/i19_zc_thermostat_CC26X2R1_LAUNCHXL_tirtos_ccs/default/syscfg/ti_drivers_config.h: 
